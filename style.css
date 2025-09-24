@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(69, 126, 126);
+  text-align: center;
+}
+
+.container {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  gap: 1vw;
+}
+
+.box {
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 1rem;
+  border: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 3px 10px rgb(104, 104, 104);
+  color: red;
+}
+
+#btn {
+  margin-top: 2rem;
+  height: 7vh;
+  width: 8vw;
+  border-radius: 1rem;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #222;
+}
+.winner{
+  color: yellow;
+}
+.msg{
+  margin: 40vh;
+  height: 70vh;
+  width: auto;
+}
+.hide{
+   display: none;
+} 
+ 
+  #new {
+  margin-top: 2rem;
+  height: 7vh;
+  width: 8vw;
+  border-radius: 1rem;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#new:hover {
+  background-color: #222;
+}
