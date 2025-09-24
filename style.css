@@ -7,11 +7,21 @@
 body {
   background-color: rgb(69, 126, 126);
   text-align: center;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #e6e6e6;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
 }
 
 .container {
-  height: 70vh;
-  width: 100vw;
+  height: auto;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,59 +29,71 @@ body {
 
 .game {
   display: grid;
-  grid-template-columns: repeat(3, 10vw);
-  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1vw;
+  width: 90vmin;
+  max-width: 400px;
+  aspect-ratio: 1/1;
 }
 
 .box {
   background-color: #fff;
-  border: 2px solid black;
   border-radius: 1rem;
-  border: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  box-shadow: 3px 10px rgb(104, 104, 104);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  box-shadow: 3px 6px rgb(104, 104, 104);
   color: red;
+  cursor: pointer;
 }
 
-#btn {
+#btn,
+#new {
   margin-top: 2rem;
-  height: 7vh;
-  width: 8vw;
+  padding: 0.8rem 1.2rem;
   border-radius: 1rem;
   background-color: #333;
   color: white;
   cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-#btn:hover {
-  background-color: #222;
-}
-.winner{
-  color: yellow;
-}
-.msg{
-  margin: 40vh;
-  height: 70vh;
-  width: auto;
-}
-.hide{
-   display: none;
-} 
- 
-  #new {
-  margin-top: 2rem;
-  height: 7vh;
-  width: 8vw;
-  border-radius: 1rem;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-}
-
+#btn:hover,
 #new:hover {
   background-color: #222;
+}
+
+.winner {
+  color: yellow;
+}
+
+.msg {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .game {
+    width: 95vmin;
+    gap: 2vw;
+    max-width: 320px;
+  }
+
+  .box {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+    box-shadow: 2px 5px rgb(80, 80, 80);
+  }
+
+  #btn,
+  #new {
+    width: 50vw;
+    max-width: 200px;
+  }
 }
