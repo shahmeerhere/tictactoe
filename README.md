@@ -81,4 +81,3 @@ This project is licensed under the **MIT License** — free to use, modify, or i
 
 ---
 
-Would you like me to make a **version with badges, preview section, and deploy link layout** (like your weather app README)? That’ll make it visually next-level for your GitHub.
