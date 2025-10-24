@@ -53,7 +53,8 @@ It’s responsive, minimal, and runs completely in the browser — perfect for t
 *(Add a screenshot or GIF of your game here)*
 
 ```
-![Tic Tac Toe Screenshot](./preview.png)
+<img width="646" height="605" alt="image" src="https://github.com/user-attachments/assets/4b154be2-72b3-4ea1-8da0-c49fe66d80a6" />
+
 ```
 
 ---
